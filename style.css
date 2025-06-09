@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+header{
+background-color: black;
+padding: 1rem 2rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.logo{
+    color: darkgreen;
+    font-size: 1.5rem;
+}
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: aqua;
+}
+.hero{
+    padding: 4rem 2rem;
+    background-color: blueviolet;
+    text-align: center;
+    color: black;
+}
+.hero-section{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn{
+    background-color: aqua;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: red;
+}
+.service{
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.service h3{
+    font-size: 2rem;
+    color: blue;
+
+}
+.service-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.card{
+    background-color: rgb(26, 27, 27);
+    border-left: 5px solid #00ffff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 250px;
+    transition:  transform 0.3s ease, background 0.3s ease;
+    color: white;
+}
+.card span{
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #cccc;
+}
+.card:hover{
+    background-color: #2a2a2a;
+    transform: translateY(-5px);
+}
+.about{
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.about h3{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #000000;
+}
+.about p{
+    max-width: 700px;
+    margin: 1rem auto;
+}
+.contact{
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.contact h3{
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.contactform{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+.contactform input, .contactform textarea{
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: antiquewhite;
+    color: #000;
+}
+.contactform button{
+    align-self: center;
+}
+.success{
+    display: none;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: black;
+    animation: fadeIn 0.5s ease-in;
+}
+footer{
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+@keyframes fadIn{
+    form{opacity: 0;}
+    to{opacity: 1;}
+}
